@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            font-family: cursive;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {}
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            height: 700px;
+            width: 100%;
+            background-image: url('https://img.freepik.com/premium-photo/adult-male-businessman-with-stubble-classic-suit-black-background_518914-10.jpg');
+            /* background-image: url('https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'); */
+            background-repeat: no-repeat;
+            /* background-size: 100% 800px; */
+            background-size: cover;
+
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        ul li a {
+            color: whitesmoke;
+            text-decoration: none;
+            padding: 24px;
+            font-size: 24px;
+        }
+
+        ul li a:hover {
+            color: red;
+        }
+
+        .my {
+            height: 50px;
+            width: 200px;
+            /* background-color: aqua; */
+            /* border: 2px solid red; */
+
+        }
+
+        #left {
+            font-size: 35px;
+            color: whitesmoke;
+
+        }
+
+        #mid {
+            width: 600px;
+
+        }
+
+        #right {
+            position: relative;
+            top: 12px;
+            left: 130px;
+        }
+
+        span {
+            color: rgb(236, 32, 100);
+        }
+
+        #right button {
+
+            width: 150px;
+            height: 40px;
+            color: red;
+            padding: 3px;
+            margin: 3px;
+            border-radius: 25px;
+            background-color: rgb(236, 32, 100);
+            color: antiquewhite;
+            font-size: 20px;
+        }
+
+        .add {
+
+            height: 50px;
+            width: 200px;
+            /* border: 2px solid wheat; */
+            position: absolute;
+            top: 250px;
+            right: 1300px;
+            color: aliceblue;
+            font-size: 25px;
+            left: 170px;
+        }
+
+        .another {
+            width: 500px;
+            height: 200px;
+            /* border: 2px solid red; */
+            position: absolute;
+            top: 280px;
+            right: 1300px;
+            color: aliceblue;
+            font-size: 80px;
+            left: 150px;
+        }
+
+        .rem {
+
+            height: 50px;
+            width: 500px;
+            /* border: 2px solid white; */
+            position: absolute;
+            top: 380px;
+            left: 140px;
+            color: aliceblue;
+            font-size: 34px;
+
+        }
+
+        .log {
+
+            width: 350px;
+            height: 70px;
+            /* border: 2px solid white; */
+            position: absolute;
+            top: 450px;
+            left: 140px;
+        }
+
+        .log input {
+
+            background-color: whitesmoke;
+            width: 200px;
+            height: 40px;
+            border-radius: 40px;
+            text-align: center;
+            border: 2px solid rgb(236, 32, 100);
+        }
+
+        .log button {
+
+            width: 80px;
+            border-radius: 18px;
+            height: 30px;
+            background-color: rgb(236, 32, 100);
+            color: aliceblue;
+        }
+
+        #du {
+
+            height: 500px;
+            width: 100%;
+            /* border: 2px solid red; */
+            background-image: url('https://i.pinimg.com/736x/66/b9/fe/66b9feec939bc6693ea1c1b21ab392a7.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 500px;
+        }
+
+        .about {
+
+            width: 400px;
+            height: 400px;
+            /* border: 2px solid red; */
+            position: absolute;
+            top: 730px;
+            left: 220px;
+        }
+
+        .hex {
+
+            height: 200px;
+            width: 400px;
+            /* border: 2px solid red; */
+            position: absolute;
+            top: 800px;
+            left: 720px;
+            color: aliceblue;
+            font-size: 60px;
+        }
+
+        .fully {
+
+            width: 250px;
+            height: 50px;
+            /* border: 2px solid red; */
+            position: absolute;
+            top: 900px;
+            left: 720px;
+            color: aliceblue;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .boss {
+
+            height: 200px;
+            width: 800px;
+            position: absolute;
+            top: 955px;
+            left: 720px;
+            /* border: 2px solid red; */
+            color: antiquewhite;
+            font-weight: bold;
+
+        }
+
+        .boss button {
+
+            height: 40px;
+            width: 110px;
+            border-radius: 18px;
+            border: 3px solid rgb(236, 32, 100);
+            color: antiquewhite;
+            background-color: rgba(0, 0, 0, 0.562);
+        }
+
+        .boss button:hover {
+            color: red;
+        }
+
+        #hip {
+
+            height: 650px;
+            width: 100%;
+            /* border: 6px solid red; */
+            background-color: black;
+            color: aliceblue;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* font-size: 70px; */
+            /* font-weight: bold; */
+            /* margin: auto; */
+
+            /* flex-direction: row; */
+            /* align-items: center; */
+
+
+        }
+
+        .myclass {
+            height: 100px;
+            width: 200px;
+            /* border: 2px solid  rgb(236, 32, 100) ; */
+            /* margin:7px; */
+            display: inline-block;
+            margin-top: 123px;
+            /* margin-left: 270px; */
+            background-color: rgb(14, 13, 13);
+            text-align: center;
+            font-size: 30px;
+            padding: 4px;
+
+        }
+
+        #class1 {
+
+            position: relative;
+            margin-left: 130px;
+            width: 299px;
+            height: 390px;
+            border-radius: 20px;
+            left: 115px;
+
+        }
+
+        #class2 {
+            position: relative;
+            margin-left: 390px;
+            width: 299px;
+            height: 390px;
+            border-radius: 20px;
+            right: 220px;
+
+
+
+
+        }
+
+        #class3 {
+            position: absolute;
+            margin-left: 130px;
+            width: 299px;
+            height: 390px;
+            border-radius: 20px;
+            /* margin-left: 730px; */
+            right: 220px;
+
+
+        }
+
+        #class1 div {
+
+            /* height: 7px;
+        width: 55px;
+        border: 2px solid red;
+        position: absolute;
+        margin-left: 125px;
+        margin-top: 22px;
+        border-radius: 12px;
+        background-color: rgb(236, 32, 100); */
+        }
+
+        #class1 .one {
+            /* height: 7px;
+        width: 55px;
+        /* border: 2px solid rgb(179, 255, 0); */
+            /* position: absolute; */
+            /* margin-left: 112px; */
+            /* margin-top: 43px;
+        border-radius: 12px;
+        background-color: rgb(236, 32, 100); */
+            */
+        }
+
+        #class1 .two {
+
+            /* height: 7px;
+        width: 55px; */
+            /* border: 2px solid rgb(179, 255, 0); */
+            /* position: absolute; */
+            /* margin-left: 112px; */
+            /* margin-top: 63px;
+        border-radius: 12px;
+        background-color: rgb(236, 32, 100); */
+
+        }
+
+        #class1 h1 {
+
+            margin-top: 74px;
+            margin-left: 39px;
+        }
+
+        .myclass p {
+
+            font-size: 20px;
+            padding: 15px;
+        }
+
+        .myclass button {
+
+            width: 110px;
+            height: 30px;
+            padding: 1px;
+            border-radius: 23px;
+            background-color: rgb(236, 32, 100);
+            font-weight: bolder;
+            border: 2px solid rgb(236, 32, 100);
+            color: aliceblue;
+            padding-bottom: 5px;
+        }
+
+        #hip h1 {
+
+            text-align: center;
+            font-size: 55px;
+            padding-top: 9px;
+        }
+
+
+        #last {
+
+            width: 100%;
+            height: 250px;
+            /* border: 4px solid red; */
+            background-color: rgb(14, 13, 13);
+        }
+
+        #last div {
+
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 42px;
+            font-weight: bolder;
+            font-size: 34px;
+        }
+
+        #last .due {
+
+            display: flex;
+            padding-left: 10px;
+        }
+
+        .due button {
+
+            background-color: black;
+            color: aliceblue;
+            width: 110px;
+            height: 35px;
+            border-radius: 20px;
+            padding-bottom: 4px;
+            border: 2px solid rgb(236, 32, 100);
+            font-weight: bold;
+
+
+
+        }
+
+        .due button:hover {
+
+            background-color: rgb(236, 32, 100);
+        }
+
+        footer {
+            height: 390px;
+            width: 100%;
+            /* border: 4px solid red; */
+            background-color: black;
+
+        }
+
+        footer #school {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 57px;
+            font-size: 45px;
+            color: aliceblue;
+            font-weight: bolder;
+        }
+
+        footer div {
+
+            color: aliceblue;
+            text-align: center;
+            padding-top: 12px;
+            font-weight: bold;
+        }
+
+        footer #logo {
+            height: 50px;
+            width: 50px;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 650px;
+            top: 2280px;
+        }
+
+        footer #insta {
+
+            height: 13px;
+            width: 10px;
+            /* border:2px solid red; */
+            position: absolute;
+            left: 720px;
+            top: 2275px;
+        }
+
+        footer .twit {
+
+            height: 50px;
+            width: 50px;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 800px;
+            top: 2292px;
+        }
+
+        footer .copy {
+            height: 50px;
+            width: 250px;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 630px;
+            top: 2400px;
+            color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="my" id="left">
+            Portfo<span>lio</span>
+
+        </div>
+        <div class="my" id="mid">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Skills</a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="my" id="right">
+            <button>Subscribe</button>
+
+        </div>
+        <div class="add">
+            Hello, my name is
+        </div>
+        <div class="another">
+            Alwaz <span class="sip">Ansari</span>
+
+        </div>
+        <div class="rem">
+            I'm web developer
+
+        </div>
+        <div class="log">
+            <input type="text" placeholder="Enter your email">
+            <button>Login</button>
+
+        </div>
+    </div>
+
+    <section id="du">
+        <div class="about">
+            <img src="https://images.unsplash.com/photo-1620122830785-a18b43585b44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMG1hbnxlbnwwfHwwfHw%3D&w=1000&q=80"
+                alt="" height="420px" width="400px">
+
+
+        </div>
+
+        <div class="hex">
+            About Me
+
+        </div>
+        <div class="fully">
+            Developer <span>& Designer</span>
+
+
+        </div>
+
+        <div class="boss">
+
+            I m a front-end developer.I can provide clean and pixel perfect design.I also make the website more & more
+            interaative with web animations. I can provide clean code and pixel Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Debitis molestias numquam distinctio? Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Cupiditate, repellendus!
+            <pre>                                                                                                                  </pre>
+            <button>Let's talks</button>
+
+        </div>
+
+    </section>
+    <section id="hip">
+        <h1> Our Services</h1>
+
+        <div class="myclass" id="class1">
+            Web Development
+            <p>Every site should be built with two primary goals Firstly. it need to work across the deviecs Secondly.it
+                needs to be fast as well</p>
+
+            <button>Read more</button>
+
+        </div>
+
+        <div class="myclass" id="class2">
+            UI & UX designer
+            <p>Every site should be built with two primary goals Firstly. it need to work across the deviecs Secondly.it
+                needs to be fast as well</p>
+            <button>Read more</button>
+
+        </div>
+
+        <div class="myclass" id="class3">
+            Web Development
+            <p>Every site should be built with two primary goals Firstly. it need to work across the deviecs Secondly.it
+                needs to be fast as well</p>
+
+            <button>Read more</button>
+
+        </div>
+
+
+
+    </section>
+
+    <section id="last">
+
+        <div>
+            Let Me Get You A Beautiful Website.
+        </div>
+
+        <div class="due">
+
+            <button>Hiring me</button>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <div id="school">
+
+            Alwaz Ansari
+        </div>
+
+        <div>
+            <p>For more HTML, CSS and coding tutorial. please click on the </p>
+        </div>
+        <div>
+            <p>link below to subscribe to my channel</p>
+        </div>
+
+        <div id="logo">
+
+            <img src="fb .jpg" alt="" width="70px" height="70px">
+
+        </div>
+
+        <div id="insta">
+
+            <img src="insta logo.jpg" alt="" width="70px" height="70px">
+
+
+        </div>
+
+        <div class="twit">
+
+            <img src="https://thumbs.dreamstime.com/b/twitter-logo-icon-vector-black-illustrations-white-background-twitter-letter-t-logo-icon-vector-can-be-used-social-media-145170875.jpg"
+                alt="error" height="50px" width="50px">
+
+
+        </div>
+
+        <div class="copy">
+
+            Copyright by Alwaz Ansari
+
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>
